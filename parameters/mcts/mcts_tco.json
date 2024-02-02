@@ -1,0 +1,31 @@
+{
+    "method": "mcts",
+    "name": "mcts",
+    "initialization": "RLF",
+    "local_search": [
+        {
+            "method": "local_search",
+            "name": "tabu_col_optimized",
+            "pseudo": "TabuColOptimized",
+            "tabu_iter": {
+                "alpha": 0.6,
+                "random": {
+                    "min": 0,
+                    "max": 10
+                }
+            },
+            "time": {
+                "relative": 0.001
+            }
+        }
+    ],
+    "adaptive": {
+        "method": "adaptive",
+        "name": "none",
+        "memory_size": 1,
+        "coeff_exploi_explo": 0.0
+    },
+    "simulation": {
+        "name": "always_ls"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "method": "mcts",
+    "name": "mcts",
+    "initialization": "random",
+    "local_search": [
+        {
+            "method": "local_search",
+            "name": "tabu_col_optimized",
+            "pseudo": "TabuColOptimized",
+            "tabu_iter": {
+                "alpha": 0.6,
+                "random": {
+                    "min": 0,
+                    "max": 10
+                }
+            },
+            "time": {
+                "relative": 0.002
+            }
+        },
+        {
+            "method": "local_search",
+            "name": "partial_ts",
+            "pseudo": "Partial-TS",
+            "time": {
+                "relative": 0.002
+            }
+        },
+        {
+            "method": "local_search",
+            "name": "partial_col",
+            "pseudo": "PartialCol",
+            "tabu_iter": {
+                "alpha": 0.6,
+                "random": {
+                    "min": 0,
+                    "max": 10
+                }
+            },
+            "time": {
+                "relative": 0.002
+            }
+        }
+    ],
+    "adaptive": {
+        "method": "adaptive",
+        "name": "ucb",
+        "memory_size": 50,
+        "coeff_exploi_explo": 1.0
+    },
+    "simulation": {
+        "name": "always_ls"
+    }
+}

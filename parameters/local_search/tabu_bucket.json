@@ -1,0 +1,13 @@
+{
+    "method": "local_search",
+    "name": "tabu_bucket",
+    "pseudo": "TabuBucket",
+    "initialization": "random",
+    "tabu_iter": {
+        "alpha": 0.002,
+        "random": {
+            "min": 0,
+            "max": 10
+        }
+    }
+}

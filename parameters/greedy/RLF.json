@@ -1,0 +1,4 @@
+{
+    "method": "greedy",
+    "initialization": "RLF"
+}

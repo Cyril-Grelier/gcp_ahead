@@ -1,0 +1,13 @@
+{
+    "method": "local_search",
+    "name": "partial_col_optimized",
+    "pseudo": "PartialColOptimized",
+    "initialization": "random",
+    "tabu_iter": {
+        "alpha": 0.6,
+        "random": {
+            "min": 0,
+            "max": 10
+        }
+    }
+}

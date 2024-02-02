@@ -1,0 +1,6 @@
+{
+    "method": "local_search",
+    "name": "partial_ts",
+    "pseudo": "Partial-TS",
+    "initialization": "random"
+}
