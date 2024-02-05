@@ -18,12 +18,17 @@ To compile this project you need :
 - `Python 3.9+ <https://www.python.org/>`\_\_ (for the slurm jobs, data analysis and documentation)
 - `pytorch` :
 
-.. code:: bash
-
+```bash
     mkdir thirdparty
     cd thirdparty
     wget https://download.pytorch.org/libtorch/cpu/libtorch-shared-with-deps-1.13.0%2Bcpu.zip
     unzip libtorch-shared-with-deps-1.13.0+cpu.zip
+
+    cd ..
+    # Load the instances
+    git submodule init
+    git submodule update
+```
 
 You can also use docker :
 
