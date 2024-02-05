@@ -13,9 +13,9 @@ This work is related to :
 
 To compile this project you need :
 
-- `cmake 3.14+ <https://cmake.org/>`\_\_
+- `cmake 3.14+ https://cmake.org/
 - gcc/g++ 11+
-- `Python 3.9+ <https://www.python.org/>`\_\_ (for the slurm jobs, data analysis and documentation)
+- `Python 3.9+ https://www.python.org/ (for the slurm jobs, data analysis and documentation)
 - `pytorch` :
 
 ```bash
@@ -23,7 +23,10 @@ To compile this project you need :
     cd thirdparty
     wget https://download.pytorch.org/libtorch/cpu/libtorch-shared-with-deps-1.13.0%2Bcpu.zip
     unzip libtorch-shared-with-deps-1.13.0+cpu.zip
+```
 
+To import the instances and build the project :
+```bash
     cd ..
     # Load the instances
     git submodule init
