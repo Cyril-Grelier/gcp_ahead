@@ -28,6 +28,13 @@ To compile this project you need :
     # Load the instances
     git submodule init
     git submodule update
+
+    # build the project
+    ./scripts/build_release.sh
+
+    # run the project
+    cd build
+    ./gc --help
 ```
 
 You can also use docker :
